@@ -42,3 +42,5 @@ group :development do
   gem "web-console"
 end
 
+
+gem "slim-rails", "~> 3.7"
