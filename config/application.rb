@@ -38,5 +38,11 @@ module BillBuddy
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+
+    # exclude helper and jbuilder files during scaffold generation
+    config.generators do |generator|
+      generator.jbuilder = false
+      generator.helper = false
+    end
   end
 end
