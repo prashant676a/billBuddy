@@ -1,0 +1,11 @@
+<% content_for :title, "New outing" %>
+
+<h1>New outing</h1>
+
+<%= render "form", outing: @outing %>
+
+<br>
+
+<div>
+  <%= link_to "Back to outings", outings_path %>
+</div>

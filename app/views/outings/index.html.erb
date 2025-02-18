@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Outings" %>
+
+<h1>Outings</h1>
+
+<div id="outings">
+  <% @outings.each do |outing| %>
+    <%= render outing %>
+    <p>
+      <%= link_to "Show this outing", outing %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New outing", new_outing_path %>
